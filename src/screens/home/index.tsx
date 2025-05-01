@@ -1,12 +1,12 @@
-import {ScreenWrapper} from '@components';
 import React from 'react';
-import {Text} from 'react-native';
+import {ScreenWrapper, Typography} from '@components';
 
 const Home = () => {
-  
   return (
     <ScreenWrapper>
-      <Text>Home</Text>;
+      <Typography type="EXTRA_LARGE" color={'red'}>
+        Home
+      </Typography>
     </ScreenWrapper>
   );
 };

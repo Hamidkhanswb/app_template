@@ -1,5 +1,7 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
+import BootSplash from 'react-native-bootsplash';
+
 import {Home} from '@screens';
 import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
 import {AppColors} from '@config';
@@ -40,7 +42,11 @@ const StackScreens = () => {
 
 const AppNavigation = () => {
   return (
-    <NavigationContainer theme={MyTheme}>
+    <NavigationContainer
+      theme={MyTheme}
+      onReady={() => {
+        BootSplash.hide();
+      }}>
       <Drawer.Navigator
         drawerContent={() => <CustomDrawerContent />}
         screenOptions={{

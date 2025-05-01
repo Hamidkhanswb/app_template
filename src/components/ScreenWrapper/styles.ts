@@ -3,7 +3,13 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff', // or your theme background
+    // paddingHorizontal: '5.5%',
+    // paddingBottom: 18,
+  },
+  scrollContent: {
+    flexGrow: 1,
+    // paddingHorizontal: '5.5%',
+    // paddingBottom: 18,
   },
 });
 
